@@ -1,0 +1,106 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+body{
+	width: 100vw;
+	height: 100vh;
+}
+.upload_container{
+	width: 100vw;
+	height: 30vh;
+
+	text-align: center;
+}
+.upload_container .upload_dnd{
+	width: 45vw;
+	height: 25vh;
+	float: left;
+}
+
+.clear_container{
+	float: left;
+	width: 49vw;
+	height: 25vh;
+}
+
+.clear_container button{
+	cursor: pointer;
+	margin-top: 10vh;
+	padding: 10px 15px;
+}
+
+.clear-fix{
+	clear: both;
+}
+
+.list{
+	width: 100vw;
+	height: 70vh;
+}
+.list .row{
+	border-radius: 6px;
+	margin-bottom: 4px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #555;
+	padding: 5px;
+	cursor: pointer;
+}
+
+#tooltip {
+	visibility: visible;
+	width: 140px;
+	background-color: #b3b3b3;
+	color: #fff;
+	text-align: center;
+	border-radius: 6px;
+	padding: 5px;
+	position: absolute;
+	z-index: 100;
+	left: 50%;
+	margin-left: -75px;
+	opacity: 0;
+	transition: opacity 0.3s;
+}
+#tooltip::after {
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: #b3b3b3 transparent transparent transparent;
+}
+#tooltip.show_active{
+	opacity: 1;
+}
+
+#upload-drop-area{
+	border: 2px dashed #ccc;
+	border-radius: 20px;
+	font-family: sans-serif;
+}
+#upload-drop-area.highlight {
+	border-color: purple;
+}
+
+#upload-drop-area .button {
+	display: inline-block;
+	margin-top: 15px;
+	padding: 10px;
+	background: #ccc;
+	cursor: pointer;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+}
+#upload-drop-area .button:hover {
+	background: #ddd;
+}
+#upload-drop-area p{
+	margin-top: 15px;
+}
+#fileUploadEl {
+	display: none;
+}

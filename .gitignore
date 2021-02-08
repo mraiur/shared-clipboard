@@ -1,0 +1,19 @@
+# Created by .ignore support plugin (hsz.mobi)
+.idea/
+
+
+# generated
+public/*.bundle.js
+public/*.bundle.js.map
+
+
+
+# library
+node_modules/
+
+# testing
+.nyc_output
+coverage
+
+#
+package-lock.json
