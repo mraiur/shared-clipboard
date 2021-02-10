@@ -1,10 +1,17 @@
 {
   "name": "sharing_clipboard",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Quickly share text and files in pc's in the network",
+  "main": "electron/app.js",
+  "build": {
+    "appId": "sharedClipboard",
+    "linux": {}
+  },
   "scripts": {
-    "start": "node src/server.js"
+    "start": "node src/server.js",
+    "electron-start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
   },
   "keywords": [],
   "author": "",
@@ -12,11 +19,15 @@
   "dependencies": {
     "koa": "^2.13.1",
     "koa-body": "^4.2.0",
+    "koa-ejs": "^4.3.0",
+    "koa-router": "^10.0.0",
+    "koa-static": "^5.0.0",
     "mime-types": "^2.1.28",
-    "ws": "^7.4.3"
+    "ws": "^7.4.3",
+    "yargs": "^16.2.0"
   },
   "devDependencies": {
-    "koa-router": "^10.0.0",
-    "koa-static": "^5.0.0"
+    "electron": "^11.2.3",
+    "electron-builder": "^22.9.1"
   }
 }

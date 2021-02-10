@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+	<meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+	<title>Hello World!</title>
+	<link href="style.css" rel="stylesheet">
+</head>
+<body>
+	<div id="connection-form">
+		<form>
+			<label for="socket_port">Socket PORT: </label><br />
+			<input type="number" id="socket_port" name="socket_port" value="9191"/><br />
+			<label for="http_port">HTTP PORT: </label><br />
+			<input type="number" id="http_port" name="http_port" value="8181"/><br />
+			<input type="button" value="Run server" id="runServer"/>
+		</form>
+	</div>
+	<script src="index.js"></script>
+</body>
+</html>
