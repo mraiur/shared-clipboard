@@ -149,7 +149,7 @@ const wss = new WebSocket.Server({ port: Config.wsPort });
 wss.on('connection', function connection(ws) {
 	ws.on('message', function incoming(message) {
 		console.log('received: %s', message);
-		ClipboardList.push({ type : 0, value: message, index: data.length});
+		ClipboardList.push({ type : 0, value: message, index: ClipboardList.length});
 		notifyChange();
 	});
 
