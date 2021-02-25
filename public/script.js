@@ -136,7 +136,7 @@ function attachEvents(){
 }
 
 function onLoad(){
-	ws = new WebSocket(`ws://localhost:${Config.wsPort}`)
+	ws = new WebSocket(`ws://${window.location.hostname}:${Config.wsPort}`)
 	body = document.body
 	listEl = document.getElementById('list')
 	tooltipEl = document.getElementById('tooltip')
